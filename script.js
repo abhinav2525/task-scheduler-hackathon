@@ -1,5 +1,5 @@
 
-const userdata = [
+let userdata = [
     {
         name: "viz",
         day: {
@@ -780,6 +780,7 @@ function myFunction(i,j,d){
     } else {
         userdata[id].day[d][i - 1].availability = true
     }
+    createTable();
 }
 
 
@@ -821,7 +822,7 @@ function createTable() {
         }
         tbody.appendChild(tr);
     }
-    // console.log(tbody.innerHTML);
+    console.log(userdata[id].day[d]);
 }
 
 
