@@ -5,13 +5,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
     <title>Task schedule</title>
 </head>
 
 <body>
-<button onclick="viz()">viz</button>
-<button onclick="abhi()">abhi</button>
-<button onclick="sara()">sara</button>
+    <center>
+        <section>
+            <div>
+                <button onclick="person('viz')">viz</button>
+                <button onclick="person('abhi')">abhi</button>
+                <button onclick="person('sara')">sara</button>
+            </div>
+            <br>
+            <h1 id="welcome"></h1>
+            <br>
+            <form action="" onchange="main(event)">
+
+                <label for="day">Choose a day:</label>
+                <select name="day" id="day">
+                    <option value="">day</option>
+                    <option value="monday">monday</option>
+                    <option value="tuesday">tuesday</option>
+                    <option value="wednesday">wednesday</option>
+                    <option value="thursday">thursday</option>
+                    <option value="friday">friday</option>
+                </select>
+                <br><br>
+
+
+            </form>
+            <br>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>timings</th>
+                            <th>availability</th>
+                            <th>checkbox</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table">
+
+                    </tbody>
+                </table>
+
+            </div>
+        </section>
+
+
+
+
+    </center>
+
 
 
 </body>
